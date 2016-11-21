@@ -3,10 +3,6 @@
 <head>
 <meta charset="utf-8" />
 <title>Notify.js demo</title>
-<meta name="description" content="Notify.js is a simple wrapper for the Web Notification API" />
-<meta name="author" content="Alex Gibson" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="robots" content="noindex, nofollow" />
 <style>
 button {
 	width: 100px;
@@ -17,8 +13,7 @@ button {
 </head>
 <body>
     <h1>Notify.js demo</h1>
-    <p>Notify.js is a simple wrapper for the Web Notification API. The GitHub repo is <a href="https://github.com/alexgibson/notify.js">here</a>.</p>
-    <p>Click the button below to fire up a notification. Currently supported in Chrome, Safari, Firefox and Firefox OS.</p>
+    <p>Click the button below to fire up a notification.
     <button id="my-button">Notify Me!</button>
 
     <!-- JavaScript assets -->
@@ -35,7 +30,7 @@ button {
             }
 
             function onClickNotification () {
-                console.log('notification was clicked!');
+                location.href = "www.yoursite.com"
             }
 
             function onErrorNotification () {
