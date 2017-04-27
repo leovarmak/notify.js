@@ -4,9 +4,18 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-$.getJSON( "https://crowbar.steamstat.us/Barney", function( data ){
-  console.log(data);
-});       
+// $.getJSON( "https://crowbar.steamstat.us/Barney", function( data ){
+//   console.log(data);
+// });   
+$.ajax({ //my ajax request
+        url: "https://crowbar.steamstat.us/Barney",
+        type: "GET",
+        cache: false,
+        dataType: "json",
+        **crossDomain: true,**
+        data: { _mydata_
+        success : function(response){}
+});    
 });
 </script>
 </head>
