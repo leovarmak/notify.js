@@ -12,9 +12,11 @@ $.ajax({ //my ajax request
         type: "GET",
         cache: false,
         dataType: "json",
-        **crossDomain: true,**
+        crossDomain: true,
         data: { _mydata_
-        success : function(response){}
+        success : function(data){
+         console.log(data);     
+              }
 });    
 });
 </script>
